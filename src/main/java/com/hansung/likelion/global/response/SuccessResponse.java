@@ -25,7 +25,7 @@ public class SuccessResponse<T> extends BaseResponse {
         return new SuccessResponse<T>(data, SuccessResponseCode.SUCCESS_OK);
     }
 
-    public static <T> SuccessResponse<T> empty(BaseResponseCode baseResponseCode) {
+    public static <T> SuccessResponse<T> empty() {
         return new SuccessResponse<T>(null, SuccessResponseCode.SUCCESS_OK);
     }
 

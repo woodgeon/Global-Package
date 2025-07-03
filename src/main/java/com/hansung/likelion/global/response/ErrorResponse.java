@@ -30,12 +30,12 @@ public class ErrorResponse<T> extends BaseResponse {
 
     // no data, BaseResponseCode
     public static ErrorResponse<?> from(BaseResponseCode baseResponseCode) {
-        return new ErrorResponse<>(baseResponseCode, null);
+        return new ErrorResponse<>(null, baseResponseCode);
     }
 
     // no data, BaseResponseCode, custom message
     public static ErrorResponse<?> from(BaseResponseCode baseResponseCode, String message) {
-        return new ErrorResponse<>(baseResponseCode, null, message);
+        return new ErrorResponse<>(null, baseResponseCode, message);
     }
 
     // has data, BaseResponseCode
